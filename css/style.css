@@ -1,0 +1,107 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body{
+  background: linear-gradient(white, rgba(0, 255, 255, 0.3));
+  height: 100%;
+}
+
+
+header{
+  /*background-color: turquoise;*/
+  height: 150px;
+  padding-top: 20px;
+  text-align: right;
+  /*overflow: hidden;*/
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.5);
+}
+header ul li {
+  list-style: none;
+  display: inline;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+
+.sidebar{
+position: absolute;
+top:150px;
+right: 0;
+width: 250px;
+height: calc(100% - 150px - 100px);
+overflow: auto;
+border-left: 1px solid rgba(0, 0, 0, 0.3);
+background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.tweet img{
+  float: left;
+  margin-right: 10px;
+}
+
+.tweet h3 {
+  font-size: 20px;
+}
+
+.container{
+  width: calc(100% - 250px);
+  margin: 0;
+
+}
+.container h1 {
+  text-align: center;
+}
+
+article img{
+  float:left;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 20px;
+
+
+}
+
+footer a {
+  padding: 10px;
+  color : white;
+}
+footer p {
+  padding-top: 20px;
+
+}
+
+
+
+/*---------------- le sonic -----------------*/
+
+
+.sonic {
+  position:absolute;
+  top:80px;
+  left:0px;
+  height: 70px;
+  width: 50px;
+  background-image: url("../img/sonic-run-xs.png");
+  animation: play .5s steps(9) infinite, slide 3s infinite ease-in;
+}
+
+@keyframes play{
+from {background-position-x: 0px ;}
+to {background-position-x: -585px;}
+}
+@keyframes slide{
+from {left: 0px ;}
+to {left: 100%;}
+}
